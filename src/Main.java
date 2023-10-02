@@ -16,9 +16,7 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String path = scanner.nextLine();
-        File file = new File(path);
-        readFile(file);
+        readFile(new File(scanner.nextLine()));
     }
 
     public static void readFile(File file) {
