@@ -15,10 +15,8 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        readFile(new File(scanner.nextLine()));
+        readFile(new File(new Scanner(System.in).nextLine()));
     }
-
     public static void readFile(File file) {
         ArrayList<String> lines = new ArrayList<>();
         Pattern pattern = Pattern.compile("\\d{3}-\\d{3}-\\d{4}");
